@@ -1,0 +1,86 @@
+/* ============================================================================
+   CSS VARIABLES - Design System
+   ============================================================================ */
+
+:root {
+  /* Colors */
+  --color-primary: #3A1C06;
+  --color-secondary: #F7EDD1;
+  --color-accent: #f4d48e;
+  --color-background: #f7edd17a;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text: #3A1C06;
+  --color-text-light: #F7EDD1;
+  --color-header: #E8D5B7;
+  --color-header-text: #5D4037;
+  --color-success: rgba(0, 128, 0, 0.606);
+  --color-error: rgba(255, 0, 0, 0.605);
+  
+  /* Typography */
+  --font-primary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-secondary: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  --font-heading: "clicker-compressed", sans-serif;
+  --font-elegant: "gloock", sans-serif;
+  --font-modern: 'Poppins', sans-serif;
+  
+  /* Font Sizes */
+  --font-size-xs: clamp(0.8rem, 2vw, 1rem);
+  --font-size-sm: clamp(1rem, 2.5vw, 1.2rem);
+  --font-size-base: clamp(1rem, 3vw, 1.5rem);
+  --font-size-lg: clamp(1.2rem, 3.5vw, 1.8rem);
+  --font-size-xl: clamp(1.4rem, 4vw, 2.2rem);
+  --font-size-2xl: clamp(1.6rem, 5vw, 3.5rem);
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+  
+  /* Layout */
+  --max-width: 1200px;
+  --border-radius: 15px;
+  --border-radius-sm: 8px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-popover: 1050;
+  --z-tooltip: 1060;
+  
+  /* Additional Variables for Category Pages */
+  --border-radius-lg: 20px;
+  --shadow-xl: 0 8px 25px rgba(58, 28, 6, 0.15);
+  
+  /* Semantic Color Names */
+  --primary-color: var(--color-primary);
+  --accent-color: var(--color-accent);
+  --bg-light: var(--color-white);
+  --text-muted: #5a5a5a;
+  --border-light: rgba(247, 237, 209, 0.3);
+  --bg-light-secondary: rgba(247, 237, 209, 0.5);
+  --text-primary: var(--color-text);
+  
+  /* Font Size Shortcuts */
+  --font-xs: var(--font-size-xs);
+  --font-sm: var(--font-size-sm);
+  --font-base: var(--font-size-base);
+  --font-lg: var(--font-size-lg);
+  --font-xl: var(--font-size-xl);
+  --font-xxl: var(--font-size-2xl);
+}
