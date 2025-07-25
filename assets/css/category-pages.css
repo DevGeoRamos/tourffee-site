@@ -1,0 +1,267 @@
+/* Category Pages Styles */
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, var(--color-header) 0%, #d4c1a4 100%);
+  color: var(--color-header-text);
+  padding: var(--space-xl) 0;
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%235D4037" opacity="0.1"/><circle cx="80" cy="80" r="1" fill="%235D4037" opacity="0.1"/><circle cx="40" cy="60" r="1" fill="%235D4037" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.page-header__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  text-shadow: 0 2px 4px rgba(93, 64, 55, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.page-header__subtitle {
+  font-size: var(--font-lg);
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.4;
+  position: relative;
+  z-index: 1;
+}
+
+/* Cafeterias Grid */
+.cafeterias-grid {
+  padding: var(--space-xl) 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+/* Cafe Card */
+.cafe-card {
+  background: #ffffff;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(58, 28, 6, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(247, 237, 209, 0.3);
+  position: relative;
+}
+
+.cafe-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(58, 28, 6, 0.15);
+  border-color: var(--color-accent);
+}
+
+.cafe-card__image {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f7edd1 0%, #f4d48e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cafe-card__image::before {
+  content: '☕';
+  font-size: 3rem;
+  color: var(--color-primary);
+  opacity: 0.3;
+  position: absolute;
+  z-index: 1;
+}
+
+.cafe-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.cafe-card__image img:error {
+  display: none;
+}
+
+.cafe-card:hover .cafe-card__image img {
+  transform: scale(1.05);
+}
+
+.cafe-card__content {
+  padding: var(--space-lg);
+  background: linear-gradient(to bottom, #ffffff 0%, #fefcf7 100%);
+}
+
+.cafe-card__title {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.cafe-card__description {
+  color: #5a5a5a;
+  margin-bottom: var(--space-md);
+  line-height: 1.6;
+}
+
+.cafe-card__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  font-size: var(--font-sm);
+}
+
+.cafe-card__location,
+.cafe-card__rating,
+.cafe-card__delivery {
+  padding: var(--space-xs) var(--space-sm);
+  background: linear-gradient(135deg, #f7edd1 0%, #f4d48e 100%);
+  border-radius: 20px;
+  color: var(--color-primary);
+  font-weight: 600;
+  border: 1px solid rgba(244, 212, 142, 0.3);
+  font-size: 0.9rem;
+}
+
+.cafe-card__actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.cafe-card__actions .btn {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Delivery Tips Section */
+.delivery-tips {
+  background: var(--bg-light-secondary);
+  padding: var(--space-xl) 0;
+  margin: var(--space-xl) 0;
+}
+
+.delivery-tips__title {
+  text-align: center;
+  font-size: var(--font-xxl);
+  color: var(--primary-color);
+  margin-bottom: var(--space-xl);
+  font-weight: 700;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.tip-card {
+  background: var(--bg-light);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-4px);
+}
+
+.tip-card h3 {
+  font-size: var(--font-lg);
+  color: var(--primary-color);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.tip-card p {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Back Navigation */
+.back-navigation {
+  padding: var(--space-xl) 0;
+  text-align: center;
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header {
+    padding: var(--space-lg) 0;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .cafe-card__actions {
+    flex-direction: column;
+  }
+  
+  .cafe-card__actions .btn {
+    width: 100%;
+  }
+  
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .cafe-card__details {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cafe-card__content {
+    padding: var(--space-md);
+  }
+  
+  .cafe-card__image {
+    height: 200px;
+  }
+  
+  .tip-card {
+    padding: var(--space-md);
+  }
+}
