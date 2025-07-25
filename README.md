@@ -1,8 +1,8 @@
-# Tourffee - Site Refatorado
+# Tourffee - Site (versão 2)
 
-## 🎯 Sobre a Refatoração
+## 🎯 Sobre
 
-Esta refatoração do site Tourffee mantém a identidade visual original enquanto implementa as melhores práticas modernas de desenvolvimento web, melhorando significativamente a estrutura, performance, acessibilidade e manutenibilidade do código.
+Esta versão do site Tourffee mantém a identidade visual original enquanto implementa as melhores práticas modernas de desenvolvimento web, melhorando significativamente a estrutura, performance, acessibilidade e manutenibilidade do código.
 
 ## 🏗️ Nova Estrutura de Arquivos
 
@@ -26,11 +26,11 @@ projeto/
 │   │   └── cafeterias.js     # Lógica das cafeterias
 │   └── images/               # Imagens organizadas
 ├── pages/
-│   ├── quiz.html            # Página do quiz refatorada
-│   ├── cafeterias.html      # Página de cafeterias refatorada
+│   ├── quiz.html            # Página do quiz 
+│   ├── cafeterias.html      # Página de cafeterias 
 │   └── cafeterias/          # Páginas individuais das cafeterias
-├── index-new.html           # Página inicial refatorada
-└── README.md               # Esta documentação
+├── index-new.html           # Página inicial
+
 ```
 
 ## ✨ Principais Melhorias
@@ -91,7 +91,7 @@ projeto/
 - ✅ Estados de loading e empty
 - ✅ Layout em grid responsivo
 
-### JavaScript Refatorado
+### JavaScript 
 - ✅ **QuizApp**: Classe completa para gerenciamento do quiz
 - ✅ **CafeteriasApp**: Sistema de busca, filtros e favoritos
 - ✅ **TourffeeUtils**: Utilitários para smooth scrolling, lazy loading, e acessibilidade
@@ -126,57 +126,6 @@ projeto/
 - ✅ Layout geral mantido
 - ✅ Imagens e conteúdo originais
 
-## 🚀 Como Usar
-
-### Desenvolvimento
-1. **Clone/baixe** os arquivos refatorados
-2. **Substitua** os arquivos originais pelos novos
-3. **Teste** todas as funcionalidades
-4. **Ajuste** conforme necessário
-
-### Estrutura de CSS
-```css
-/* Importa todos os módulos */
-@import 'variables.css';
-@import 'base.css';
-@import 'layout.css';
-/* ... outros módulos */
-```
-
-### JavaScript
-```javascript
-// Inicialização automática baseada em elementos DOM
-document.addEventListener('DOMContentLoaded', () => {
-  if (document.getElementById('question')) {
-    new QuizApp();
-  }
-  if (document.querySelector('.cafeterias__grid')) {
-    new CafeteriasApp();
-  }
-});
-```
-
-## 🔄 Migração dos Arquivos Originais
-
-### Arquivos a Substituir
-- `index.html` → `index-new.html`
-- `quiz.html` → `pages/quiz.html`
-- `quiz.js` → `assets/js/quiz.js`
-- `style.css` → `assets/css/main.css` (modular)
-- `cafeterias.html` → `pages/cafeterias.html`
-
-### Novos Arquivos
-- `assets/css/*.css` (sistema modular)
-- `assets/js/utils.js` (utilitários)
-- `assets/js/cafeterias.js` (funcionalidades)
-
-## 📊 Benefícios da Refatoração
-
-### Performance
-- ⚡ **50% menos CSS** através de modularização
-- ⚡ **Loading 30% mais rápido** com lazy loading
-- ⚡ **JavaScript otimizado** com classes e modules
-
 ### Manutenibilidade
 - 🔧 **Código organizado** em módulos lógicos
 - 🔧 **Variáveis centralizadas** para mudanças rápidas
@@ -209,17 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
 2. Adicione objeto no array `questions`
 3. Siga o padrão existente
 
-## 🌟 Próximos Passos Sugeridos
-
-- [ ] Implementar PWA (Progressive Web App)
-- [ ] Adicionar Service Worker para cache
-- [ ] Integrar com API real de cafeterias
-- [ ] Implementar sistema de reviews
-- [ ] Adicionar geolocalização
-- [ ] Sistema de notificações
-
 ---
 
 **Tourffee** - Seu próximo café favorito te espera! ☕
-
-*Refatoração completa mantendo a essência original com tecnologias modernas.*
